@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -22,7 +23,7 @@
     <!-- Nav-Menu Start  -->
 
     <header>
-        <section class="bg-gray-950 py-7 md:px-16 lg:px-28">
+        <section class="bg-gray-950 pt-7 md:px-16 lg:px-28">
             <div class="flex flex-col md:flex-row justify-between items-center gap-3 md:gap-6">
                 <div class="logo">
                     <img src="img/Logo.png" alt="Logo.png" class="w-full">
@@ -30,15 +31,15 @@
                 <div class="nav-items">
                     <nav>
                         <ul class="hidden md:flex  gap-5">
-                            <li><a href="" class="text-emerald-600 font-medium hover:text-emerald-400">Home</a></li>
-                            <li><a href="" class="text-white hover:font-medium hover:text-emerald-400">About</a></li>
-                            <li><a href="" class="text-white hover:font-medium hover:text-emerald-400">Services</a></li>
-                            <li><a href="" class="text-white hover:font-medium hover:text-emerald-400">Contact</a></li>
+                            <li class="md:transition ease-in-out md:hover:-translate-y-1 md:hover:scale-110 "><a href="" class="text-emerald-600 font-medium hover:text-emerald-400">Home</a></li>
+                            <li class="md:transition ease-in-out md:hover:-translate-y-1 md:hover:scale-110 "><a href="" class="text-white hover:font-medium hover:text-emerald-400">About</a></li>
+                            <li class="md:transition ease-in-out md:hover:-translate-y-1 md:hover:scale-110 "><a href="" class="text-white hover:font-medium hover:text-emerald-400">Services</a></li>
+                            <li class="md:transition ease-in-out md:hover:-translate-y-1 md:hover:scale-110 "><a href="" class="text-white hover:font-medium hover:text-emerald-400">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
                 <div class="download w-full md:w-auto">
-                    <button class="bg-emerald-600 hover:bg-emerald-400 px-4 py-2 md:rounded-md text-gray-950 font-medium w-full md:w-auto">Download Now</button>
+                    <button class="md:transition ease-in-out md:hover:-translate-y-1 md:hover:scale-110 bg-emerald-600 hover:bg-emerald-400 px-4 py-2 md:rounded-md text-gray-950 font-medium w-full md:w-auto">Download Now</button>
                 </div>
             </div>
         </section>
@@ -56,7 +57,7 @@
                 </h1>
                 <p class="text-white text-2xl md:leading-normal lg:leading-relaxed text-center md:text-left">With HealthPal app, you can easily and quickly access the medical specialties and hospital services you need on all days of the week.</p>
                 <div class="download text-center md:text-left">
-                    <button class="bg-emerald-600 hover:bg-emerald-400 px-4 py-2 rounded-md text-gray-950 font-medium text-xl ">Download Now</button>
+                    <button class="transition ease-in-out hover:-translate-y-1 hover:scale-110 bg-emerald-600 hover:bg-emerald-400 px-4 py-2 rounded-md text-gray-950 font-medium text-xl ">Download Now</button>
                 </div>
             </div>
             <div class="image-area hidden md:flex md:w-1/3">
@@ -70,8 +71,7 @@
     <!-- Features Start  -->
 
 
-
-    <section id="features" class="features px-16 md:px-28 py-32 md:pt-10 md:pb-28 lg:px-28 flex flex-col justify-center items-center gap-20">
+    <section id="features" class="px-16 md:px-28 py-32 md:py-28 flex flex-col justify-center items-center gap-20">
         <div class="title flex flex-col gap-3">
             <h1 class="text-5xl font-bold text-gray-950">Features</h1>
             <hr class="border-2 border-emerald-600">
@@ -87,7 +87,7 @@
                 <h1 class="font-bold text-xl">24/7 Support</h1>
                 <p class="text-center">Access to support services on all days of the week at all hours.</p>
             </div>
-            <div class="card-col shadow-lg rounded-md p-16 pb-24 flex flex-col justify-center items-center gap-6">
+            <div class="card-col shadow-lg rounded-md p-16 pb-24 flex flex-col justify-center items-center gap-6 md:col-span-2 lg:col-span-1">
                 <img src="img/scan-barcode.png" alt="scan-barcode.png" class="w-12 rounded-full p-3 bg-emerald-600">
                 <h1 class="font-bold text-xl">Quick Access</h1>
                 <p class="text-center">Quick access to the doctors and medical services you want.</p>
@@ -96,8 +96,101 @@
     </section>
 
 
-
     <!-- Features End  -->
+    <!-- Quick Service Start  -->
+
+
+    <section class="px-16 md:px-28 py-32 md:py-28 justify-center items-center gap-20 flex bg-gray-100">
+        <div class="image-area hidden md:flex md:w-1/3">
+            <img src="img/Find the nearest doctors.png" alt="" class="w-72">
+        </div>
+        <div class="text-area flex flex-col lg:p-16 rounded-md gap-5 w-2/3">
+            <h1 class="text-5xl font-bold  text-gray-950 text-center md:text-left">Quick access to the services you need</h1>
+            <hr class="border-2 border-emerald-600 w-1/6 text-center md:text-left m-auto md:m-0">
+            <p class="text-gray-950 text-2xl md:leading-normal lg:leading-relaxed text-center md:text-left">Easily find the doctors and medical centers you need, on the map.</p>
+            <div class="download text-center md:text-left">
+                <button class=" text-emerald-600 hover:text-emerald-400 font-medium text-xl ">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Quick Service End  -->
+    <!-- Specialist Doctors Section Start  -->
+    <section class="px-10 md:px-28 py-32 md:py-28 justify-center items-center gap-20 flex bg-emerald-100 ">
+        
+        <div class="text-area flex flex-col lg:p-16 rounded-md gap-5 w-2/3">
+            <h1 class="text-5xl font-bold text-gray-950 text-center md:text-left">Access to specialist doctors</h1>
+            <p class="text-gray-950 text-2xl md:leading-normal lg:leading-relaxed text-center md:text-left">You have easy access to various medical specialties and doctors.</p>
+            <div class="download text-center md:text-left">
+                <button class="transition ease-in-outhover:-translate-y-1 hover:scale-110 bg-emerald-600 hover:bg-emerald-400 px-4 py-2 rounded-md text-white font-medium text-xl "><i class="fas fas fa-hospital-user"></i> Find Doctors</button>
+            </div>
+        </div>
+        <div class="image-area hidden md:flex md:w-1/3">
+            <img src="img/Find doctors screen.png" alt="" class="w-72">
+        </div>
+    </section>
+    <!-- Specialist Doctors Section End  -->
+    <!-- About Start  -->
+    <section class="px-16 md:px-28 py-32 md:py-28 justify-center items-center gap-20 flex bg-gray-950">
+        <div class="image-area hidden md:flex md:w-1/3">
+            <img src="img/Favorite doctors.png" alt="" class="w-72">
+        </div>
+        <div class="text-area flex flex-col lg:p-16 rounded-md gap-5 w-2/3">
+            <h1 class="text-5xl font-bold  text-white text-center md:text-left">About</h1>
+            <hr class="border-2 border-emerald-600 w-1/6 text-center md:text-left m-auto md:m-0">
+            <p class="text-white text-2xl md:leading-normal lg:leading-relaxed text-center md:text-left">Our platform connects you with qualified doctors who can provide medical consultations from the convenience of your own home. With our user-friendly interface, you can book appointments, chat with doctors via video call, and even receive e-prescriptions.</p>
+            <div class="download text-center md:text-left">
+                <button class=" text-emerald-600 hover:text-emerald-400 font-medium text-xl ">Read More</button>
+            </div>
+        </div>
+    </section>
+    <!-- About End  -->
+    <!-- Counter Start  -->
+    <section class="bg-[url('img/25030.png')]">
+        <div class=" bg-stone-50 w-full h-full px-16 md:px-28 py-32 md:py-28 justify-around items-center gap-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 bg-opacity-50">
+            <div class="counter flex flex-col justify-center items-center">
+                <h1 class="text-4xl text-gray-950 font-bold text-center">300+</h1>
+                <h2 class="text-3xl text-gray-950 text-center">Medical Centers</h2>
+            </div>
+            <div class="counter flex flex-col justify-center items-center">
+                <h1 class="text-4xl text-gray-950 font-bold text-center">200+</h1>
+                <h2 class="text-3xl text-gray-950 text-center">Professional Doctors</h2>
+            </div>
+            <div class="counter flex flex-col justify-center items-center md:col-span-2 lg:col-span-1">
+                <h1 class="text-4xl text-gray-950 font-bold text-center">3k+</h1>
+                <h2 class="text-3xl text-gray-950 text-center">Customers</h2>
+            </div>
+        </div>
+    </section>
+    <!-- Counter End  -->
+    <!-- Booking Process Start  -->
+    <section class="px-16 md:px-28 py-32 md:py-28 flex flex-col justify-around items-center gap-20 bg-gray-100">
+        <div class="title flex flex-col gap-5">
+            <h1 class="text-5xl font-bold text-gray-950 text-center">Easily Book Your Appointment</h1>
+            <hr class="border-2 border-emerald-600 w-1/3 m-auto">
+        </div>
+        <div class="counter">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-around items-center gap-20 ">
+                <div class="process flex flex-col justify-center items-center gap-5">
+                    <img class="md:col-span-2 lg:col-span-1 w-72" src="img/Doctor details screen.png" alt="">
+                    <h1 class="text-xl text-white bg-emerald-600 p-5 w-full text-center font-medium border-t-8 border-b-8 border-gray-950">Select Doctor</h1>
+                </div>
+                <div class="process flex flex-col justify-center items-center gap-5">
+                    <img class="md:col-span-2 lg:col-span-1 w-72" src="img/Doctor Select Time screen-01.png" alt="">
+                    <h1 class="text-xl text-white bg-emerald-600 p-5 w-full text-center font-medium border-t-8 border-b-8 border-gray-950">Choose Time</h1>
+                </div>
+                <div class="process flex flex-col justify-center items-center gap-5 md:col-span-2 lg:col-span-1">
+                    <img class="md:col-span-2 lg:col-span-1 w-72" src="img/Doctor Select Time screen-01-1.png" alt="">
+                    <h1 class="text-xl text-white bg-emerald-600 p-5 w-full text-center font-medium border-t-8 border-b-8 border-gray-950">Confirm Booking</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Booking Process End  -->
+
+
+
 
 
 
