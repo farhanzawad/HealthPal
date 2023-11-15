@@ -18,23 +18,23 @@
     <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon">
     
 </head>
-<body class="selection:bg-emerald-400 selection:text-gray-950">
+<body class="select-none">
 
     <!-- Nav-Menu Start  -->
 
     <header>
-        <section class="bg-gray-950 pt-7 md:px-16 lg:px-28">
-            <div class="flex flex-col md:flex-row justify-between items-center gap-3 md:gap-6">
+        <section class="bg-gray-950 pt-3 md:py-4 md:px-16 lg:px-28 fixed w-full z-10">
+            <div class="flex flex-col md:flex-row justify-center md:justify-between items-center gap-2 md:gap-6">
                 <div class="logo">
-                    <img src="img/Logo.png" alt="Logo.png" class="w-full">
+                    <img src="img/Logo.png" alt="Logo.png" class="w-2/3 md:w-full m-auto">
                 </div>
                 <div class="nav-items">
                     <nav>
                         <ul class="hidden md:flex  gap-5">
-                            <li class="md:transition ease-in-out md:hover:-translate-y-1 md:hover:scale-110 "><a href="" class="text-emerald-600 font-medium hover:text-emerald-400">Home</a></li>
-                            <li class="md:transition ease-in-out md:hover:-translate-y-1 md:hover:scale-110 "><a href="" class="text-white hover:font-medium hover:text-emerald-400">About</a></li>
-                            <li class="md:transition ease-in-out md:hover:-translate-y-1 md:hover:scale-110 "><a href="" class="text-white hover:font-medium hover:text-emerald-400">Services</a></li>
-                            <li class="md:transition ease-in-out md:hover:-translate-y-1 md:hover:scale-110 "><a href="" class="text-white hover:font-medium hover:text-emerald-400">Contact</a></li>
+                            <li class="md:transition ease-in-out md:hover:-translate-y-1 md:hover:scale-110 "><a href="#to-top" class="text-emerald-600 font-medium hover:text-emerald-400">Home</a></li>
+                            <li class="md:transition ease-in-out md:hover:-translate-y-1 md:hover:scale-110 "><a href="#service" class="text-white hover:font-medium hover:text-emerald-400">Services</a></li>
+                            <li class="md:transition ease-in-out md:hover:-translate-y-1 md:hover:scale-110 "><a href="#about" class="text-white hover:font-medium hover:text-emerald-400">About</a></li>
+                            <li class="md:transition ease-in-out md:hover:-translate-y-1 md:hover:scale-110 "><a href="#contact" class="text-white hover:font-medium hover:text-emerald-400">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -49,8 +49,8 @@
     <!-- Hero Start  -->
 
 
-    <section class="bg-gray-950 px-28 py-32 md:pt-7 md:pb-36 md:px-16 lg:px-28">
-        <div id="to-top" class="to-top flex items-center justify-around gap-14 md:gap-9">
+    <section id="to-top" class="bg-gray-950 px-28 py-32 md:pt-7 md:pb-36 md:px-16 lg:px-28">
+        <div  class="flex items-center justify-around gap-14 md:gap-9 pt-28">
             <div class="text-area flex flex-col gap-4 w-full md:w-2/3">
                 <h1 class="text-5xl font-bold text-white md:leading-tight lg:leading-relaxed text-center md:text-left">
                     Meet Your Favorite <br><span class="text-emerald-600">Doctors</span> Online.
@@ -71,23 +71,23 @@
     <!-- Features Start  -->
 
 
-    <section id="features" class="px-16 md:px-28 py-32 md:py-28 flex flex-col justify-center items-center gap-20">
+    <section id="features" class="px-16 md:px-28 py-32 md:py-28 flex flex-col justify-center items-center gap-20 bg-gray-100">
         <div class="title flex flex-col gap-3">
             <h1 class="text-5xl font-bold text-gray-950">Features</h1>
             <hr class="border-2 border-emerald-600">
         </div>
         <div class="card grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:flex-row justify-center content-center gap-10">
-            <div class="card-col shadow-lg rounded-md p-16 pb-24 flex flex-col justify-center items-center gap-6">
+            <div class="card-col drop-shadow-lg rounded-md p-16 pb-24 flex flex-col justify-center items-center gap-6 transition ease-in-out hover:-translate-y-1 hover:scale-110 bg-white">
                 <img src="img/tick-circle.png" alt="tick-circle.png" class="w-12 rounded-full p-3 bg-emerald-600">
                 <h1 class="font-bold text-xl">Easy Use</h1>
                 <p class="text-center">Using this application is very simple for all people at any ages.</p>
             </div>
-            <div class="card-col shadow-lg rounded-md p-16 pb-24 flex flex-col justify-center items-center gap-6">
+            <div class="card-col drop-shadow-lg rounded-md p-16 pb-24 flex flex-col justify-center items-center gap-6 transition ease-in-out hover:-translate-y-1 hover:scale-110 bg-white">
                 <img src="img/24-support.png" alt="24-support.png" class="w-12 rounded-full p-3 bg-emerald-600">
                 <h1 class="font-bold text-xl">24/7 Support</h1>
                 <p class="text-center">Access to support services on all days of the week at all hours.</p>
             </div>
-            <div class="card-col shadow-lg rounded-md p-16 pb-24 flex flex-col justify-center items-center gap-6 md:col-span-2 lg:col-span-1">
+            <div class="card-col drop-shadow-lg rounded-md p-16 pb-24 flex flex-col justify-center items-center gap-6 transition ease-in-out hover:-translate-y-1 hover:scale-110 bg-white md:col-span-2 lg:col-span-1">
                 <img src="img/scan-barcode.png" alt="scan-barcode.png" class="w-12 rounded-full p-3 bg-emerald-600">
                 <h1 class="font-bold text-xl">Quick Access</h1>
                 <p class="text-center">Quick access to the doctors and medical services you want.</p>
@@ -100,7 +100,7 @@
     <!-- Quick Service Start  -->
 
 
-    <section class="px-16 md:px-28 py-32 md:py-28 justify-center items-center gap-20 flex bg-gray-100">
+    <section id="service" class="px-16 md:px-28 py-32 md:py-28 justify-center items-center gap-20 flex">
         <div class="image-area hidden md:flex md:w-1/3">
             <img src="img/Find the nearest doctors.png" alt="" class="w-72">
         </div>
@@ -132,7 +132,7 @@
     </section>
     <!-- Specialist Doctors Section End  -->
     <!-- About Start  -->
-    <section class="px-16 md:px-28 py-32 md:py-28 justify-center items-center gap-20 flex bg-gray-950">
+    <section id="about" class="px-16 md:px-28 py-32 md:py-28 justify-center items-center gap-20 flex bg-gray-950">
         <div class="image-area hidden md:flex md:w-1/3">
             <img src="img/Favorite doctors.png" alt="" class="w-72">
         </div>
@@ -148,7 +148,7 @@
     <!-- About End  -->
     <!-- Counter Start  -->
     <section class="bg-[url('img/25030.png')]">
-        <div class=" bg-stone-50 w-full h-full px-16 md:px-28 py-32 md:py-28 justify-around items-center gap-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 bg-opacity-50">
+        <div class=" bg-stone-50 w-full h-full px-16 md:px-28 py-16 md:py-16 justify-around items-center gap-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 bg-opacity-50">
             <div class="counter flex flex-col justify-center items-center">
                 <h1 class="text-4xl text-gray-950 font-bold text-center">300+</h1>
                 <h2 class="text-3xl text-gray-950 text-center">Medical Centers</h2>
@@ -174,15 +174,15 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-around items-center gap-20 ">
                 <div class="process flex flex-col justify-center items-center gap-5">
                     <img class="md:col-span-2 lg:col-span-1 w-72" src="img/Doctor details screen.png" alt="">
-                    <h1 class="text-xl text-white bg-emerald-600 p-5 w-full text-center font-medium border-t-8 border-b-8 border-gray-950">Select Doctor</h1>
+                    <h1 class="text-xl text-gray-950 p-5 w-full text-center font-bold">Select <span class="text-emerald-600"> Doctor</span></h1>
                 </div>
                 <div class="process flex flex-col justify-center items-center gap-5">
                     <img class="md:col-span-2 lg:col-span-1 w-72" src="img/Doctor Select Time screen-01.png" alt="">
-                    <h1 class="text-xl text-white bg-emerald-600 p-5 w-full text-center font-medium border-t-8 border-b-8 border-gray-950">Choose Time</h1>
+                    <h1 class="text-xl text-gray-950 p-5 w-full text-center font-bold">Choose <span class="text-emerald-600"> Time</span></h1>
                 </div>
                 <div class="process flex flex-col justify-center items-center gap-5 md:col-span-2 lg:col-span-1">
                     <img class="md:col-span-2 lg:col-span-1 w-72" src="img/Doctor Select Time screen-01-1.png" alt="">
-                    <h1 class="text-xl text-white bg-emerald-600 p-5 w-full text-center font-medium border-t-8 border-b-8 border-gray-950">Confirm Booking</h1>
+                    <h1 class="text-xl text-gray-950 p-5 w-full text-center font-bold">Confirm <span class="text-emerald-600">Booking</span></h1>
                 </div>
             </div>
         </div>
@@ -191,13 +191,13 @@
     <!-- Contact Start  -->
 
 
-    <section class="px-16 md:px-28 py-32 md:py-28 flex flex-col md:flex-row justify-around items-center gap-28 bg-gray-950">
+    <section id="contact" class="px-16 md:px-28 py-32 md:py-28 flex flex-col md:flex-row justify-around items-center gap-28 bg-gray-950">
         <div class="text-area w-1/2 flex flex-col gap-5">
             <h1 class="text-5xl font-bold  text-white text-center md:text-left">Contact Us</h1>
             <hr class="border-2 border-emerald-600 w-1/6 text-center md:text-left m-auto md:m-0">
             <p class="text-white text-lg md:leading-normal lg:leading-relaxed text-center md:text-left">We are honored to receive your comments and suggestions. Please feel free to contact us :</p>
             <div class="social-icons">
-                <ul class="flex gap-5">
+                <ul class="flex gap-5 justify-center md:justify-start items-center">
                     <li><a href=""><i class="fa-brands fa-facebook md:transition ease-in-out md:hover:-translate-y-1 md:hover:scale-110 text-emerald-600 hover:text-emerald-400 rounded-full text-3xl"></i></a></li>
                     <li><a href=""><i class="fa-brands fa-youtube md:transition ease-in-out md:hover:-translate-y-1 md:hover:scale-110 text-emerald-600 hover:text-emerald-400 rounded-full text-3xl"></i></a></li>
                     <li><a href=""><i class="fa-brands fa-github md:transition ease-in-out md:hover:-translate-y-1 md:hover:scale-110 text-emerald-600 hover:text-emerald-400 rounded-full text-3xl"></i></a></li>
@@ -206,17 +206,22 @@
         </div>
         <form action="" class="flex flex-col w-1/2 gap-2">
             <label for="name" class="text-white font-semibold">Name <span class="text-emerald-600 font-semibold">*</span></label>
-            <input type="text" name="name" id="name" placeholder="Enter your name" class="w-2/3 p-2 rounded-md " required>
+            <input type="text" name="name" id="name" placeholder="Enter your name" class=" w-full p-2 rounded-md " required>
             <label for="mail" class="text-white font-semibold">Email <span class="text-emerald-600 font-semibold">*</span></label>
-            <input type="email" name="mail" id="mail" placeholder="Enter your Email" class="w-2/3 p-2 rounded-md " required>
+            <input type="email" name="mail" id="mail" placeholder="Enter your Email" class="w-full p-2 rounded-md " required>
             <label for="textarea" class="text-white font-semibold">Message:</label>
-            <textarea name="textarea" id="textarea" cols="30" rows="10" class="w-2/3 p-2 rounded-md" placeholder="Write your Message"></textarea>
-            <input type="submit" value="Send" class="transition ease-in-outhover:-translate-y-1 hover:scale-110 bg-emerald-600 hover:bg-emerald-400 px-4 py-2 rounded-md text-white font-medium text-xl w-2/3 cursor-pointer">
+            <textarea name="textarea" id="textarea" cols="30" rows="10" class="w-full p-2 rounded-md" placeholder="Write your Message"></textarea>
+            <input type="submit" value="Send" class="transition ease-in-outhover:-translate-y-1 hover:scale-110 bg-emerald-600 hover:bg-emerald-400 px-4 py-2 rounded-md text-white font-medium text-xl w-full cursor-pointer">
         </form>
     </section>
 
 
     <!-- Contact End  -->
+    <!-- Copyright Start  -->
+    <section class="px-8 md:px-28 py-2 flex flex-col md:flex-row justify-center items-center gap-28 bg-gray-950 border-t border-gray-600">
+        <p class="text-white text-center md:text-right">&copy Copyright 2023 | HealthPal</p>
+    </section>
+    <!-- Copyright End  -->
 
 
 
